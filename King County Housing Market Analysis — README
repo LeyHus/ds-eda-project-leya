@@ -1,0 +1,151 @@
+📌 Project Overview
+
+This project analyzes the King County housing market (Seattle area) to support a fictional client, Nicole Johnson, in making an informed decision about buying a home.
+The analysis includes exploratory data analysis (EDA), geographic insights, price modeling, and final home recommendations, all summarized in a presentation deck. 
+The goal is to understand how location, renovations, and market patterns affect home affordability — and identify the best options for Nicole based on her budget and lifestyle.
+
+🎯 Client Background
+Nicole Johnson
+
+Middle-budget homebuyer
+
+Prefers lively, central neighborhoods
+
+Values reasonable pricing and access to amenities
+
+Wants to buy within the next 12 months
+
+
+All analysis steps — cleaning, visualization, ZIP code evaluation, and suggestions — were aligned with Nicole’s preferences.
+
+🎯 Project Goals
+
+Assess how location influences home prices
+
+Determine the impact of renovations on price
+
+Evaluate whether Nicole can find an affordable home in a lively, central neighborhood
+
+These goals structure the entire EDA process.
+
+📂 Repository Contents
+├── data/                   # Raw and cleaned datasets
+├── notebooks/              # Jupyter notebook with complete analysis
+├── presentation/           # Final presentation (King County Housing Analysis)
+├── maps/                   # Folium HTML maps for ZIP and home locations
+├── README.md               # This file
+└── requirements.txt        # Python dependencies
+
+🧹 Data Cleaning Summary
+
+Float room counts (e.g., 1.7 bedrooms) → rounded to nearest whole number
+
+Unrealistic year values (yr_renovated with extra digits) → corrected
+
+Outlier detection for lot sizes and luxury home pricing
+
+
+📊 Analysis Summary
+1. Location has the strongest impact on price
+
+Higher latitude (north) → significantly more expensive because of proximity to central Seattle
+
+More western longitude → higher prices
+
+Conclusion: the central–north corridor is the luxury segment.
+
+
+2. Renovated homes cost more — but not proportionally
+
+Renovated homes have higher average and median prices
+
+Variation is large — some renovated houses are not expensive
+
+Non-renovated homes can offer better value per square foot
+
+
+3. Nicole can find mid-priced houses in central areas
+
+ZIP codes 98168, 98106, and 98108 provide:
+
+Reasonable distance to city center
+
+Good housing supply
+
+Middle-price range
+
+Lively neighborhoods
+
+
+4. Seasonal price patterns
+
+Prices dip in late autumn and winter
+
+Prices rise again in spring and summer
+→ Best purchasing window is winter for negotiation advantage.
+
+
+
+
+🏠 Final Recommendations
+
+House A — Best Overall Value (ZIP 98168)
+
+ID: 797000258, Price: $350,000
+
+2 beds, 2 full baths + one ¾ bath
+
+2,820 sqft — largest among the recommendations
+
+Built 1947, not renovated
+
+Big lot (11,770 sqft)
+
+Excellent value for space
+
+House B — Best Family Layout (ZIP 98168)
+
+ID: 6433000050, Price: $350,000
+
+4 beds, 2 baths
+
+2,740 sqft
+
+Built 1972
+
+Balanced lot size, strong long-term layout
+
+House C — Best Location & Most Bedrooms (ZIP 98106)
+
+ID: 1773100620, Price: $350,000
+
+5 beds, 3 baths
+
+2,320 sqft
+
+Built 1963
+
+Centrally located in West Seattle
+
+Best match to Nicole’s lifestyle priorities
+
+🗺️ Geospatial Visualizations
+
+Repository includes:
+
+ZIP code centrality vs. price chart
+
+Folium maps for best ZIP codes
+
+Map marking the three suggested homes
+
+
+🔍 Key Insights (Final Slide Summary)
+
+Location drives price more than any other factor
+
+Renovations raise price, but not drastically enough to exclude unrenovated homes
+
+Seasonality affects pricing — winter offers best buying opportunities
+
+These insights strategically guide Nicole’s decision.
